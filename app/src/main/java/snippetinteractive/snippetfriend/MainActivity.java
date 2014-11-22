@@ -63,36 +63,18 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         displaySpeechRecognizer();
-    }
 
-//    private void createCards() {
-//        mCards = new ArrayList<CardBuilder>();
-//
-//        mCards.add(new CardBuilder(this, CardBuilder.Layout.TEXT)
-//        .setText("This card is awesome!")
-//        .setFootnote("I'm the footer!"));
-//    }
+        createCards();
+    }
 
     private void createCards() {
         mCards = new ArrayList<CardBuilder>();
 
-//        Card card;
-//
-//        card = new Card(this);
-//        card.setText(name);
-//        card.setImageLayout(Card.ImageLayout.FULL);
-//        Log.d("Added file", Uri.fromFile(location.getAbsoluteFile()).toString());
-//        mCards.add(card);
-//
-//        mCardScrollView = new CardScrollView(this);
-//        ExampleCardScrollAdapter adapter = new ExampleCardScrollAdapter();
-//        mCardScrollView.setAdapter(adapter);
-//        mCardScrollView.activate();
-//        setContentView(mCardScrollView);
 
-        mCards.add(new CardBuilder(this, CardBuilder.Layout.TEXT)
-        .setText("Hello World!")
-        .setFootnote("I'm the footer!"));
+        mCards.add(new CardBuilder(this, CardBuilder.Layout.CAPTION)
+                .setText("This card has a puppy background image.")
+                .setFootnote("How can you resist?"));
+
 
         mCardScroller = new CardScrollView(this);
         ExampleCardScrollAdapter adapter = new ExampleCardScrollAdapter();
