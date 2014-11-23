@@ -1,2 +1,3 @@
 <!-- For more information about voice trigger, check out: https://developers.google.com/glass/develop/gdk/starting-glassware -->
-<trigger keyword="@string/app_name" />
+<trigger keyword="@string/app_name"></trigger>
+<!--<input prompt="@string/glass_voice_prompt"/>-->

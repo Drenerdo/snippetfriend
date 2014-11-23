@@ -20,11 +20,13 @@ import android.speech.RecognizerIntent;
 import android.util.Log;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,6 +47,7 @@ public class MainActivity extends Activity {
      */
     private CardScrollView mCardScroller;
     private List<CardBuilder> mCards;
+//    private List<Card> mCards;
 
     String name;
 
@@ -70,10 +73,12 @@ public class MainActivity extends Activity {
     private void createCards() {
         mCards = new ArrayList<CardBuilder>();
 
-
         mCards.add(new CardBuilder(this, CardBuilder.Layout.CAPTION)
-                .setText("This card has a puppy background image.")
-                .setFootnote("How can you resist?"));
+                    .setText("This is fucking awesome.")
+                    .setFootnote("How can you reject this awesomeness"));
+
+
+
 
 
         mCardScroller = new CardScrollView(this);

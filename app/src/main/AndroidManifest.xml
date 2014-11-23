@@ -3,12 +3,14 @@
     package="snippetinteractive.snippetfriend" >
 
     <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:label="@string/app_name">
         <activity
             android:name="snippetinteractive.snippetfriend.MainActivity"
             android:icon="@drawable/ic_glass_logo"
