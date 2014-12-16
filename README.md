@@ -1,0 +1,4 @@
+snippetfriend
+=============
+
+Google Glass Application
